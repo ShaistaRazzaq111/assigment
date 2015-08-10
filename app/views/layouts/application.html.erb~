@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Miniaap</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<style>
+ body{background-color:  	#4B0082}
+ </style>
+<body>
+
+
+	<%=render 'layouts/header' %>
+   
+      
+
+
+
+	<%= render 'layouts/footer' %>	
+
+
+</body>
+
+</html>

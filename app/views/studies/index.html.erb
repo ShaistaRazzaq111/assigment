@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<center>
+<h1>Listing Studies</h1></center>
+
+<table  border="1" bordercolor=" #FFD700" width="10" align="center">
+  <thead>
+    <tr>
+	<th>Study ID</th>
+      <th>Subject</th>
+      <th>Student</th>
+      <th colspan="3">Edit</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @studies.each do |study| %>
+      <tr>
+	<td><%= study.id %></td>
+        <td><%= study.subject.subject_title %></td>
+        <td><%= study.student.student_name %></td>
+        <td><%= link_to 'Show', study %></td>
+        <td><%= link_to 'Edit', edit_study_path(study) %></td>
+        <td><%= link_to 'Destroy', study, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Study', new_study_path %>

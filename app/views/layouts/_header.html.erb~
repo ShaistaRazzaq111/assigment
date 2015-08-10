@@ -1,0 +1,41 @@
+<div id="container">
+<div class="banner">
+<%=image_tag("on.jpg", :alt=>"user", :class=>"round", :width=>"900px", :height=>"150", :align=>"center")%></div>
+
+<div class="nav">
+
+<tr>
+     <td><%= link_to   'Home  |', root_path%></td>
+     <td><%= link_to'student  |', students_path%></td>
+     <td><%= link_to 'subject |', subjects_path%></td>
+     <td><%= link_to 'teacher |', teachers_path%></td>
+     <td><%= link_to 'attendance |', attendances_path%></td>
+     <td><%= link_to 'teach |', teaches_path%></td>
+     <td><%= link_to 'study |', studies_path%></td>
+     <td><%= link_to 'show Attendance|', welcome_show_path%></td>
+     <td><%= link_to 'ERD |', erd_page_path%></td>
+
+</tr>
+</div>
+	<div class="content-wrapper">
+	<div class="col1"> <%= yield %>
+	</div>
+	<div class="col2"> <img src="images/uni.jpeg" width="178" height="100">
+	<p><a href="http://http://www.uob.edu.pk/">Visit UOB</a></p><br>
+
+	<img src="images/ror.jpeg" width="178" height="100">
+        
+        <p><a href="http://www.tutorialspoint.com/ruby-on-rails/">Visit ROR tutorial</a></p><br>
+
+	<img src="images/ff.jpg" width="178" height="100">
+        
+        <p><a href="http://www.facebook.com">Visit FaceBook</a></p><br>
+
+
+
+
+	
+	
+</div>
+
+</div></div>

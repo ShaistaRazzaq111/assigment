@@ -1,0 +1,17 @@
+<h1><center>Entity Relationship Digram(ERD)</center></h1>
+<h2> <center> Atendance ManagementSystem </center></h2>
+
+
+<center>
+<body background-color="green">
+
+
+
+<div>
+<%=image_tag("index.png", :alt=>"user", :class=>"round", :width=>"650px", :height=>"300", :align=>"center")%>
+</div>
+<div>
+<%=image_tag("admin.png", :alt=>"user", :class=>"round", :width=>"650px", :height=>"310", :align=>"center")%>
+</div>
+</center>
+
